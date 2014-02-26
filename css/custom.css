@@ -4,13 +4,116 @@ body{
 }
 .navbar-inverse {
    background-color: #dfdfdf;
-   color: #edebeb;
+   color: #aa7aca;
    border-color:#e0e0e0;
 }
 .navbar .nav > li > a {
     color: #aa7aca;
-      mergin-left:30em;
-
+     } 
+  .dropdown-menu > li > a {
+  color: #aa7aca;
+  }
+.navbar .nav > li > a:hover { color:#871e1b;}
+.dropdown-menu > li > a:hover {
+color: #871e1b;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus{
+	background-color:#dfdfdf;
+}
+.social{
+	padding-top:10px;
+}
+.navbar-default .navbar-text {
+   background-color: #dfdfdf;
+   color: #aa7aca;
+}
+.container{
+	background-color: #dfdfdf;
+	
+}
+.panel-footer {
+	background-color:#dfdfdf ;
+	;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	background-size:cover;
+	border-top:none;
+}
+.panel-footer>p {
+	color:#aa7aca;
+	float:left;
+}
+.panel-footer>ul {
+	list-style:none;
+}
+.panel-footer>ul>li>a {
+	color:#aa7aca;
+	padding:0 2.5em;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	color:#279127;
+}
+a:hover {
+	color: #fff;
+}
+.facebook,.twitter {
+	float:right;
+}
+.facebook{
+	margin-left: .9%;
+}
+ /* Carousel base class */
+    .carousel {
+      margin-bottom: 0px;
     }
-.navbar-inverse a:hover { color:#A52A2A !important; }
 
+    .carousel .container {
+      position: relative;
+      z-index: 9;
+    }
+
+    .carousel .item {
+      height: 100%;
+    }
+
+    .carousel-inner {
+    
+      width: 100%;
+      min-height: 100%;
+      position:relative;
+    }
+
+    .carousel img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+
+    .carousel-caption {
+      background-color: transparent;
+      position: static;
+      max-width: 550px;
+  
+      margin-top: 200px;
+    }
+    .carousel-caption h1,
+    .carousel-caption .lead {
+      margin: 0;
+     
+      color: #fff;
+      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+    }
+   html,body{height:100%;}
+   .carousel,.item,.active{height:100%;}
+   .carousel-inner{height:100%;}
+    @media (max-width: 979px) {
+ .carousel img {
+        width: auto;
+        height: 200px;
+      }
+
+    
+    
+    }
