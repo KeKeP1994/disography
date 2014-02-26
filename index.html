@@ -8,39 +8,95 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <script src="js/respond.js"></script>
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <script src="modernizr.js"></script>
+    
     
 </head>
 
 <body>
-<div class="container">
-	<!-- row 1: navigation -->
-	    <div class="row">
-	    	<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-	            <div class="navbar-header">
-	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
-	                  <span class="sr-only">Toggle navigation</span>
-	                  <span class="icon-bar"></span>
-	                  <span class="icon-bar"></span>
-	                  <span class="icon-bar"></span>
-	                </button>
-	            </div>
-	            <div class="collapse navbar-collapse" id="collapse">
-	                <ul class="nav navbar-nav">
-	                    <li><a href="index.html">Home</a></li>
-	                    <li><a href="#">About</a></li>
-	                    <li class="active"><a href="#">Services</a></li>
-	                    <li><a href="#">Photo Gallery</a></li>
-	                    <li><a href="#">Contact</a></li>  
-	                </ul> 
-	            </div>
-	         </nav> 
-	    </div>    
-    
-   
-</div> <!-- end container -->
-
-<!-- javascript -->
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<div class = "navbar navbar-inverse navbar-static-top">
+                        <div class = "container">
+                               
+                         <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="Sleeping With Sirens"></a>
+                               
+                                <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+                                        <span class = "icon-bar"></span>
+                                        <span class = "icon-bar"></span>
+                                        <span class = "icon-bar"></span>
+                                </button>
+                               
+                                <div class = "collapse navbar-collapse navHeaderCollapse">
+                               
+                                        <ul class = "nav navbar-nav navbar-right">
+                                       
+                                                <li><a href = "index.html">Home</a></li>
+                                                <li><a href = "bio.html">Biography</a></li>
+                                                <li class = "dropdown">
+                                                       
+                                                        <a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Albums 
+                                                        <b class = "caret"></b></a>
+                                                        <ul class = "dropdown-menu">
+                                                                <li><a href = "https://itunes.apple.com/us/album/if-you-were-movie-this-would/id533638377">If you were a movie this would be your sound track</a></li>
+                                                                <li><a href = "https://itunes.apple.com/us/album/feel/id636921691">Feel</a></li>
+                                                                <li><a href = "https://itunes.apple.com/us/album/lets-cheers-to-this/id434137734">Lets cheer to this</a></li>
+                                                                <li><a href = "https://itunes.apple.com/us/album/ears-to-see-eyes-to-hear/id360773034">With eyes to hear and ears to see</a></li>
+                                                                <li><a href = "https://itunes.apple.com/us/album/alone-feat.-mgk-single/id648147747">Alone Feat. MGC-single</a></li>
+                                                                <li><a href = "https://itunes.apple.com/us/album/dead-walker-texas-ranger-single/id570064963">Dead Texas Walker Ranger-single</a></li>
+                                                                <li><a href = "https://itunes.apple.com/us/album/do-it-now-remember-it-later/id431444061">Do it now remember later-single</a></li>
+                                                        </ul>
+                                               
+                                                </li>
+                                                <li><a href = "rock_out.html">Rock Out</a></li>
+                                                <li><a href = "contact.html">Contact Us</a></li>
+                                       
+                                        </ul>
+                               
+                                </div>
+                               
+                        </div>
+                </div>
+              <div class="imageContainer">
+              <div class="flexslider">
+                <ul class="slides">
+                  <li>
+                    <img src="cupcake.png" alt="cupcake" />
+                  </li>
+                  <li>
+                    <img src="food.jpg" alt="food"/>
+                  </li>
+                  <li>
+                    <img src="cut_fruit.jpg"  alt="cut fruit"/>
+                  </li>
+                  <li>
+                    <img src="drink.jpg"  alt="drink"/>
+                  </li>
+                  <li>
+                  	<img src="hamburger.jpg" alt="hamburger"/>
+                  </li>
+                  <li>
+                  	<img src="italian_food.jpg" alt="italian food"/>
+                  </li>
+                  	<li>
+                  		<img src="coffee_2.jpg" alt="coffee"/>
+                  	</li>
+                  	<li>
+                  		<img src="tea.JPG" alt="tea"/>
+                  	</li>
+                  	  <script src="jquery.flexslider.js"></script>
+                  	
+                  	  <script type="text/javascript">
+                  	    $(window).load(function(){
+                  	      $('.flexslider').flexslider({
+                  	        animation: "slide",
+                  	        start: function(slider){
+                  	          $('body').removeClass('loading');
+                  	        }
+                  	      });
+                  	    });
+                  	  </script>
+                  	
+              	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
