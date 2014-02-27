@@ -1,14 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html>
 <head>
     <meta charset="utf-8">
+
     <title>Sleeping With Sirens</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
     <script src="js/respond.js"></script>
-   </head>
+</head>
 
 <body>
 <div class = "navbar navbar-inverse navbar-static-top">
@@ -17,9 +19,9 @@
                          <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="Sleeping With Sirens"></a>
                                
                                 <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-                                        <span class = "icon-bar"></span>
-                                        <span class = "icon-bar"></span>
-                                        <span class = "icon-bar"></span>
+                                        <span class = "
+                                        glyphicon glyphicon-music"></span>
+                                        
                                 </button>
                                
                                 <div class = "collapse navbar-collapse navHeaderCollapse">
@@ -41,8 +43,7 @@
                                                                 <li><a href = "https://itunes.apple.com/us/album/dead-walker-texas-ranger-single/id570064963">Dead Texas Walker Ranger-single</a></li>
                                                                 <li><a href = "https://itunes.apple.com/us/album/do-it-now-remember-it-later/id431444061">Do it now remember later-single</a></li>
                                                         </ul>
-                                               
-                                                </li>
+                                                        </li>
                                                 <li><a href = "rock_out.html">Rock Out</a></li>
                                                 <li><a href = "contact.html">Contact Us</a></li>
                                        
@@ -52,76 +53,105 @@
                                
                         </div>
                 </div>
-            <!--  Carousel - consult the Twitter Bootstrap docs at 
+<!--  Carousel - consult the Twitter Bootstrap docs at 
                   http://twitter.github.com/bootstrap/javascript.html#carousel -->
-            <div id="this-carousel-id" class="carousel slide"><!-- class of slide for animation -->
-              <div class="carousel-inner">
-                <div class="item active"><!-- class of active since it's the first item -->
-                  <img src="slides/group_photo.jpg" alt="group photo of band" />
-                  <div class="carousel-caption">
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="slides/kellin_quinn.jpg" alt="photo of kellin quinn" />
-                  <div class="carousel-caption">
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="slides/jack_fowler.jpg" alt="photo of Jack Fowler" />
-                  <div class="carousel-caption">
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="slides/gabe_barham.jpg" alt="photo of Gabe Barham" />
-                  <div class="carousel-caption">
-                  </div>
-                </div>
-                <div class="item">
-                  <img src="slides/please_stay.jpg" alt="please stay" />
-                  <div class="carousel-caption">
-                  </div>
-                </div>
-                <div class="item">
-                 <img src="slides/thing_won't_be_broken.jpg" alt="things won't be broken" />
-                  <div class="carousel-caption">
-                  </div>
-                </div>
-              </div><!-- /.carousel-inner -->
-              <!--  Next and Previous controls below
+
+    <div class="carousel slide" id="this-carousel-id">
+        <!-- class of slide for animation -->
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- class of active since it's the first item -->
+                <img alt="group photo of band" src="slides/group_photo.jpg">
+
+                <div class="carousel-caption"></div>
+            </div>
+
+            <div class="item">
+                <img alt="photo of kellin quinn" src="slides/kellin_quinn.jpg">
+
+                <div class="carousel-caption"></div>
+            </div>
+
+            <div class="item">
+                <img alt="photo of Jack Fowler" src="slides/jack_fowler.jpg">
+
+                <div class="carousel-caption"></div>
+            </div>
+
+            <div class="item">
+                <img alt="photo of Gabe Barham" src="slides/gabe_barham.jpg">
+
+                <div class="carousel-caption"></div>
+            </div>
+
+            <div class="item">
+                <img alt="please stay" src="slides/please_stay.jpg">
+
+                <div class="carousel-caption"></div>
+            </div>
+
+            <div class="item">
+                <img alt="things won't be broken" src=
+                "slides/thing_won't_be_broken.jpg">
+
+                <div class="carousel-caption"></div>
+            </div>
+        </div><!-- /.carousel-inner -->
+        <!--  Next and Previous controls below
                     href values must reference the id for this carousel -->
-                <a class="carousel-control left" href="#this-carousel-id" data-slide="prev">&lsaquo;</a>
-                <a class="carousel-control right" href="#this-carousel-id" data-slide="next">&rsaquo;</a>
-            </div><!-- /.carousel -->
-         
-            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-            <script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
-                      
-            
-            <script>
-              $(document).ready(function(){
+        <a class="carousel-control left" data-slide="prev" href=
+        "#this-carousel-id">‹</a> <a class="carousel-control right" data-slide=
+        "next" href="#this-carousel-id">›</a>
+    </div><!-- /.carousel -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script><script>
+window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')
+    </script><script>
+          $(document).ready(function(){
                 $('.carousel').carousel();
               });
-            </script>
-          
-            <script>
-              $(document).ready(function(){
+    </script><script>
+          $(document).ready(function(){
                 $('.carousel').carousel({
                   interval: 2000
                 });
               });
-            </script>
-            <div class="col-sm-12"> 
+    </script>
+
+    <div class="row">
+        <div class="col-lg-2">
+            <div class="caption">
+                <h4 class="tour">Pomona , California</h4>
+
+                <p class="tour">November 21 7:00 P.M. @ Fox Theater</p>
+
+                <p><a class="ticket" href="#">Buy Ticket Here </a></p>
+            </div>
+        </div>
+
+        <div class="col-lg-2">
+            <div class="caption">
+                <h4 class="tour">Pomona , California</h4>
+
+                <p class="tour">November 21 7:00 P.M. @ Fox Theater</p>
+
+                <p><a class="ticket" href="#">Buy Ticket Here </a></p>
+            </div>
+        </div>
+
+        <div class="col-sm-12">
             <div class="panel-footer clearfix navbar-fixed-bottom">
-            			<p class="small">&copy; 2009, Sleeping With Sirens</p>
-            			<ul>
-            				<a href="https://www.facebook.com/sleepingwithsirensband" class="facebook"><img src="images/facebook.jpg" alt="facebook"></a>
-            				<a href="https://twitter.com/SWStheband" class="twitter"><img src="images/twitter.jpg" alt="twitter"></a>
-            				
-            			</ul>
-            		</div>
-            	</div>	
-            	</div>			
-              	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+                <p class="small">© 2009, Sleeping With Sirens</p>
+
+                <div style="margin-left: 2em">
+                    <a class="facebook" href=
+                    "https://www.facebook.com/sleepingwithsirensband"><img alt=
+                    "facebook" src="images/facebook.png"></a> <a class=
+                    "twitter" href="https://twitter.com/SWStheband"><img alt=
+                    "twitter" src="images/twitter.png"></a>
+                </div>
+            </div>
+        </div>
+    </div><script src="http://code.jquery.com/jquery-latest.min.js"></script><script src="js/bootstrap.min.js"></script>
 </body>
 </html>

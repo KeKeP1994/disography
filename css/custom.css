@@ -1,6 +1,15 @@
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
 body{
 	background-image: url(../images/background.jpg);
 	background-size: cover;
+	background-position: center center;
+	vertical-align: top;
+	max-width:90%;
+	  
 }
 .navbar-inverse {
    background-color: #dfdfdf;
@@ -51,69 +60,84 @@ color: #871e1b;
 	padding:0 2.5em;
 }
 .navbar-default .navbar-nav>li>a:hover {
-	color:#279127;
+	color:#871e1b;
 }
 a:hover {
 	color: #fff;
+	
 }
+/* footer */
 .facebook,.twitter {
 	float:right;
 }
 .facebook{
 	margin-left: .9%;
 }
- /* Carousel base class */
-    .carousel {
-      margin-bottom: 0px;
-    }
+/* slideshow */ 
+.carousel-inner {
+position: relative;
+width: 100%;
+overflow: hidden;
+padding-left: 25%;
+padding-right: 25%;
+background-color: transparent;
+}
+a.carousel-control.left{
+	width: .5%;
+	background-color: transparent;
+}
+a.carousel-control.right{
+	width: .5%;
+	background-color: transparent;
+}
+.carousel-control
+p.tour_dates{
+	padding-top:40%;
+}
+/* button */
+.btn-info:hover,
+.btn-info:focus,
+.btn-info:active,
+.btn-infor.active,
+.open .dropdown-toggle.btn-info{
+	color: #ffffff;
+	background-color: #3f2b22;
+	border-color: #333;
+}
+.btn-info{
+	background-color: #cdae51;
+	border-color:#3f2b22;
+	color: #ffffff;	
+}
+div.caption{
+	background-color:#dfdfdf ;
+}
 
-    .carousel .container {
-      position: relative;
-      z-index: 9;
-    }
+a.ticket{
+	color:#aa7aca ;
 
-    .carousel .item {
-      height: 100%;
-    }
+}
+a.ticket:hover{
+	color: #871e1b;
+}
 
-    .carousel-inner {
-    
-      width: 100%;
-      min-height: 100%;
-      position:relative;
-    }
+h4.tour{
+	color:#aa7aca;
+}
+p.tour{
+	color: #871e1b;
+	
+}
+.glyphicon{
+	color: #5d6d67;
+}
+div.col-lg-2{
+	margin: 0;
+}
+@media (max-width: 767px) {	
+p.tour_top{
+padding-top:10%;}
+}
 
-    .carousel img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
-    }
-
-    .carousel-caption {
-      background-color: transparent;
-      position: static;
-      max-width: 550px;
-  
-      margin-top: 200px;
-    }
-    .carousel-caption h1,
-    .carousel-caption .lead {
-      margin: 0;
-     
-      color: #fff;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-    }
-   html,body{height:100%;}
-   .carousel,.item,.active{height:100%;}
-   .carousel-inner{height:100%;}
-    @media (max-width: 979px) {
- .carousel img {
-        width: auto;
-        height: 200px;
-      }
-
-    
-    
-    }
+@media (max-width: 480px) {p.tour_top{
+padding-top:0;}  }

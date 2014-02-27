@@ -901,8 +901,8 @@ pre code {
 .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .col-xs-1,
@@ -920,8 +920,8 @@ pre code {
   float: left;
 }
 
-.col-xs-12 {
-  width: 100%;
+.col-lg-1 {
+  width: 80%;
 }
 
 .col-xs-11 {
