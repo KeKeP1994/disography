@@ -19,7 +19,7 @@ padding-left:24px;
 }
 /* navbar */
 .navbar-inverse {
-   background-color:red;
+   background:transparent;
    color: #aa7aca;
    border-color:#e0e0e0;
 }
